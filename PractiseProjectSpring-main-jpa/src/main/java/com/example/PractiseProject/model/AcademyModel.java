@@ -10,14 +10,15 @@ public class AcademyModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String academy_id;
+    private long academy_id;
     private String name;
     private String user_type;
     
-	public String getAcademy_id() {
+
+	public long getAcademy_id() {
 		return academy_id;
 	}
-	public void setAcademy_id(String academy_id) {
+	public void setAcademy_id(long academy_id) {
 		this.academy_id = academy_id;
 	}
 	public String getName() {
